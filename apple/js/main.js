@@ -17,9 +17,6 @@ function CallField(formClass, inputClass) {
             if(el.classList.contains('error')) {
                 event.preventDefault();
             }
-            if (!form.querySelectorall('input').forEach(el => el.classList.contains('error'))) {
-                form.classList.remove('visible');
-            }
         });
     });
 }

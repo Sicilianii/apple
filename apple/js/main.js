@@ -11,16 +11,8 @@ function CallField(formClass, inputClass) {
             }
         });
     });
-    const form = document.querySelector(formClass);
-    form.addEventListener('submit', event => {
-        inptForm.forEach(el => {
-            if(el.classList.contains('error')) {
-                event.preventDefault();
-            }
-        });
-    });
+    prop(formClass, inputClass);
 }
-
 
 
 function request() {
@@ -38,20 +30,41 @@ function request() {
     });
     document.querySelector('#light-cross').addEventListener('click', () => {
         form.classList.remove('visible');
-    })
-    form.addEventListener('submit', event => {
-        let pop = form.querySelectorAll('.footer-calls-form-inpt').forEach(el => {
-            if(el.classList.contains('error')) {
-                event.preventDefault();
-            } 
-            if(el.value === '') {
-                event.preventDefault();
-                el.classList.add('error');
-            }
-        });
     });
     CallField('.task', '.footer-calls-form-inpt');
 }
 
+
+function prop(formClass, itemClass) {
+    const form = document.querySelector(formClass);
+    form.addEventListener('submit', event => {
+        form.querySelectorAll(itemClass).forEach(el => {
+            if(el.classList.contains('error')) {
+                event.preventDefault();
+            } 
+            if (el.value === '') {
+                event.preventDefault();
+                el.classList.add('error');
+            }
+            
+        });
+    });
+}
+
+
+function search(formClass, inputClass) {
+    const allItems = document.querySelectorAll(inputClass);
+    allItems.forEach(el => el.addEventListener('input', ev => {
+        let item = ev.target;
+        if (item.value === '') {
+        item.classList.add('error');
+        } else {
+        item.classList.remove('error');
+        }
+    }));
+    prop(formClass,inputClass);
+}
+
 CallField('.footer-calls-form', '.footer-calls-form-inpt');
 request();
+search('.filter', '.filter-sel');

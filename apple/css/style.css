@@ -261,6 +261,9 @@ body {
 }
 .task-calls {
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer-box {
   display: flex;
@@ -327,9 +330,7 @@ body {
   border: 1px solid #E5E5E5;
   border-radius: 28px;
 }
-.footer-calls-form-inpt:nth-child(2) {
-  margin-left: 1%;
-}
+
 .footer-calls-form-btn {
   background: #FFCC29;
   border-radius: 28px;
@@ -388,7 +389,11 @@ body {
 .filter {
   border: 1px solid #FFCC29;
   margin-top: 60px;
+<<<<<<< HEAD
   margin-bottom: 45px;
+=======
+  margin-bottom: 35px;
+>>>>>>> 8de09ca65a49c4b2b6f4c90ff088ec7ffe2ec7b7
   width: 100%;
   border-radius: 5px;
   padding: 10px 20px;
@@ -459,8 +464,12 @@ body {
 }
 .catalog {
   margin: auto;
+<<<<<<< HEAD
   max-width: 1007px;
   width: 100%;
+=======
+  width: 88.4%;
+>>>>>>> 8de09ca65a49c4b2b6f4c90ff088ec7ffe2ec7b7
   height: fit-content;
   border: 1px solid #FFCC29;
   border-radius: 5px;

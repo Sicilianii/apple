@@ -27,7 +27,7 @@ body {
   margin: 0;
   width: 100%;
 }
-.heading-navigation > div {
+.mobile {
   display: flex;
 }
 .heading-navigation-link {
@@ -103,9 +103,10 @@ body {
 
 .repair {
   width: 100%;
-  height: 890px;
+  min-height: 700px;
   background-image: url(../img/repair-tech.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -119,7 +120,6 @@ body {
   text-align: right;
   position: absolute;
   right: 0;
-  bottom: 50px;
 }
 
 .repair-head-sp {
@@ -575,15 +575,16 @@ body {
     box-sizing: border-box;
   }
   .repair {
-    height: 100vh;
+    min-height: 100vh;
   }
   .repair-haeding {
+    width: 40vw;
     height: 50vh;
-    font-size: 20px;
+    font-size: 32px;
     margin-right: 15px;
   }
   .repair-head-sp {
-    font-size: 20px;
+    font-size: 32px;
   }
   .footer-map {
     display: none;
@@ -591,12 +592,72 @@ body {
 }
 
 @media (max-width: 767px) {
+  .info-container-item {
+    width: 154px;
+    height: 157px;
+    padding: 0;
+  }
+  .info-container-item-head {
+    font-size: 12px;
+    margin: 0;
+  }
+  .info-container-item-txt {
+    font-size: 12px;
+    margin: 0;
+  }
   .heading {
     padding: 10px;
   }
-  
+  .info-container {
+    flex-wrap: wrap;
+  }
+  .repair {
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 480px) {
-   
+  .mobile:nth-child(1) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .mobile:nth-child(2) {
+    display: none;
+  }
+  .info-container {
+    flex-wrap: wrap;
+  }
+  .info-heading {
+    margin: 30px 0;
+    font-size: 32px;
+  }
+  .info-heading-txt {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .repair {
+    background-size: contain;
+    min-height: 203px;
+  }
+  .repair-haeding {
+    font-size: 16px;
+    top: 0;
+    width: 170px;
+  }
+  .repair-head-sp {
+    font-size: 17px;
+  }
+  .footer-calls-form-inpt {
+    width: 100%;
+  }
+  .footer-calls-form-inpt:nth-child(2) {
+    margin-top: 5px;
+  }
+  .footer-map {
+    display: none;
+  }
+  .slideshow-container {
+    display: none;
+  }
 }

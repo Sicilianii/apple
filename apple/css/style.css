@@ -462,7 +462,6 @@ body {
 .catalog {
   margin: auto;
   max-width: 1007px;
-  width: 100%;
   width: 88.4%;
   height: fit-content;
   border: 1px solid #FFCC29;
@@ -589,6 +588,37 @@ body {
   .footer-map {
     display: none;
   }
+  .filter {
+    padding: 10px 40px;
+    flex-wrap: wrap;
+  }
+  .filter > div:nth-child(3) {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .filter-inpt {
+    width: 100%;
+  }
+  .catalog {
+    width: 100%;
+  }
+  .catalog-item {
+    width: 215px;
+    min-height: 450px;
+  }
+  .catalog-item-img {
+    min-height: 200px;
+  }
+  .catalog-item-img img {
+    width: 180px;
+  }
+  .catalog-item-info h1 {
+    font-size: 14px;
+  }
+  .catalog-item-info span {
+    font-size: 20px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -642,11 +672,67 @@ body {
   }
   .info-heading {
     margin: 30px 0;
-    font-size: 32px;
+    font-size: 25px;
   }
   .info-heading-txt {
     padding: 5px;
     box-sizing: border-box;
+  }
+  .filter {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 88.4%;
+    margin: 30px auto;
+  }
+  .filter-labl {
+    font-size: 12px;
+  }
+  .filter-sel {
+    margin-left: 6px;
+    width: 140px;
+    font-size: 12px;
+  }
+  .filter > div:nth-child(3) {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .filter-inpt {
+    width: 100%;
+  }
+  .catalog {
+    justify-content: space-evenly;
+  }
+  .catalog-item {
+    width: 186px;
+    margin: 5px;
+    padding: 5px;
+    max-height: 355px;
+    min-height: 140px;
+  }
+  .catalog-item-img img {
+    width: 140px;
+  }
+  .catalog-item-img {
+    min-height: 140px;
+  }
+  .catalog-item-info h1 {
+    font-size: 12px;
+  }
+  .catalog-item-info span {
+    font-size: 18px;
+  }
+  .catalog-item-info button {
+    margin-top: 5px;
+  }
+  .task {
+    width: 480px;
+  }
+  .task-item-heading h1 {
+    font-size: 14px;
+  }
+  .task-item-ipt {
+    width: 315px;
+    font-size: 14px;
   }
 }
 
@@ -664,7 +750,7 @@ body {
   }
   .info-heading {
     margin: 30px 0;
-    font-size: 32px;
+    font-size: 25px;
   }
   .info-heading-txt {
     padding: 5px;
@@ -682,8 +768,15 @@ body {
   .repair-head-sp {
     font-size: 17px;
   }
+  .filter > div {
+    margin-top: 10px;
+  }
+  .filter > div:nth-child(1) {
+    margin: 0;
+  }
   .footer-calls-form-inpt {
     width: 100%;
+    font-size: 12px;
   }
   .footer-calls-form-inpt:nth-child(2) {
     margin-top: 5px;
@@ -693,5 +786,15 @@ body {
   }
   .slideshow-container {
     display: none;
+  }
+  .task {
+    width: 100vw;
+  }
+  .task-item-heading h1 {
+    font-size: 14px;
+  }
+  .task-item-ipt {
+    width: 100%;
+    font-size: 12px;
   }
 }

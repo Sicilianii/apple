@@ -195,7 +195,7 @@ body {
   width: 546px;
   padding: 40px;
   box-sizing: border-box;
-  min-height: 353px;
+  min-height: 270px;
   background-color: #F9F9F9;
   border-radius: 10px;
 }
@@ -347,7 +347,7 @@ body {
   text-transform: capitalize;
   border: none;
   cursor: pointer;
-  margin-top: 22px;
+  margin-top: 30px;
   transition: 1s;
 }
 .footer-calls-form-btn:hover {
@@ -547,7 +547,7 @@ body {
   border: 2px  solid red;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .info-container {
     flex-wrap: wrap;
   }
@@ -792,6 +792,9 @@ body {
   }
   .task {
     width: 100vw;
+  }
+  .task-item {
+    justify-content: space-evenly;
   }
   .task-item-heading h1 {
     font-size: 14px;

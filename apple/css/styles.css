@@ -530,7 +530,7 @@ body {
   justify-content: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   color: #39373A;
   cursor: pointer;
@@ -576,7 +576,8 @@ body {
     box-sizing: border-box;
   }
   .repair {
-    min-height: 100vh;
+    min-height: 400px;
+    background-size: contain;
   }
   .repair-haeding {
     width: 40vw;

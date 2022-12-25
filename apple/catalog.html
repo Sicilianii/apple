@@ -206,7 +206,7 @@
                     </ul>
                     <form action="#" class="footer-calls-form">
                         <input class="footer-calls-form-inpt" type="text" placeholder="Ваш Имя:">
-                        <input class="footer-calls-form-inpt" type="text" placeholder="Ваш Номер:">
+                        <input class="footer-calls-form-inpt second-inpt" type="text" placeholder="Ваш Номер:">
                         <button class="footer-calls-form-btn">Заказать обратную связь</button>
                     </form>
                 </div>
@@ -231,6 +231,12 @@
             });
         });
     </script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+        window.onload = function() {
+            CallField('.footer-calls-form', '.footer-calls-form-inpt');
+            request();
+            search('.filter', '.filter-sel');
+        };
+    </script>
 </body>
 </html>

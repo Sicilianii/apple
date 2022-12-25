@@ -330,7 +330,7 @@ body {
   border: 1px solid #E5E5E5;
   border-radius: 28px;
 }
-.footer-calls-form-inpt:nth-child(2) {
+.second-inpt {
   margin-left: 5px;
 }
 .footer-calls-form-btn {
@@ -547,6 +547,7 @@ body {
   border: 2px  solid red;
 }
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .info-container {
     flex-wrap: wrap;
@@ -667,7 +668,7 @@ body {
   .footer-calls-form-inpt {
     width: 100%;
   }
-  .footer-calls-form-inpt:nth-child(2) {
+  .second-inpt {
     margin-top: 5px;
     margin-left: 0;
   }
@@ -782,7 +783,7 @@ body {
     width: 100%;
     font-size: 12px;
   }
-  .footer-calls-form-inpt:nth-child(2) {
+  .second-inpt {
     margin-top: 5px;
   }
   .footer-map {
@@ -803,5 +804,8 @@ body {
   .task-item-ipt {
     width: 100%;
     font-size: 12px;
+  }
+  .mb-3 {
+    width: 100%;
   }
 }

@@ -16,16 +16,15 @@ function CallField(formClass, inputClass) {
 
 function request() {
     const inptName = document.querySelector('#item-sales');
-    const inptNumber = document.querySelector('#item-price');
+    
     const form = document.querySelector('.task');
     const btnItems = document.querySelector('.catalog').querySelectorAll('button');
-    if (!btnItems === null) {
+    if (btnItems !== null) {
         btnItems.forEach(el => {
             el.addEventListener('click', event => {
                 form.classList.add('visible');
                 console.log(inptName.value);
                 inptName.value = event.target.parentElement.children[0].textContent;
-                inptNumber.value = event.target.parentElement.children[1].textContent;
             });
         });
     } else {
